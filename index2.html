@@ -1,0 +1,343 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body class="bg-info">
+	<div class="col-9 mx-auto "> 
+		<h1>Money: <span class="score"></span>$</h1>
+		<div class="row">
+			<div class="col-3 dice">
+				<h4>Брось кость!</h4>
+				<img src="cube.png" class="w-50">
+			</div>
+			<div style="margin-left: 25%; display: none;" class="quest">
+				<h2>Вопрос: 1 + 1 = ?</h2>
+				<input type="" class="input" size="30">
+				<button class="send">ОК</button>
+			</div>
+			<div style="margin-left: 25%; display: none;" class="quest1">
+				<h2>Сколько ноутбуков в этом кабинете?</h2>
+				<input type="" class="input1" size="30">
+				<button class="send1">ОК</button>
+			</div>
+			<div style="margin-left: 25%; display: none;" class="quest2">
+				<h2>Сколько этажей в этом здании?</h2>
+				<input type="" class="input2" size="30">
+				<button class="send2">ОК</button>
+			</div>
+		</div>
+		<h2>Start</h2>
+		<!--первый ряд-->
+		<div class="row">
+			<div class="col-1 bg-white px-5 py-3 border border-success text-center player_begin" style="background-image: url(game_player.png); background-size: 100% 100%">
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				1
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				2
+			</div>	
+			<div class="col-1 px-5 py-5 border good bg-success">
+				3
+			</div>
+			<div class="col-1 px-5 py-5 border good bg-success">
+				4
+			</div>
+			<div class="col-1 px-5 py-5 border vopros2 bg-primary">
+				5
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				6
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				7
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				8
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				9
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				10
+			</div>
+		</div>
+		<!--второй ряд-->
+		<div class="row">
+			<div class="col-1 px-5 py-5 border good bg-success">
+				11
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				12
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				13
+			</div>	
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				14
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				15
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				16
+			</div>
+			<div class="col-1 px-5 py-5 border good bg-success">
+				17
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				18
+			</div>
+			<div class="col-1 px-5 py-5 border good bg-success">
+				19
+			</div>
+			<div class="col-1 px-5 py-5 border vopros bg-primary">
+				20
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				21
+			</div>
+		</div>
+		<!--третий ряд-->
+		<div class="row">
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				22
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				23
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				24
+			</div>	
+			<div class="col-1 px-5 py-5 border black bg-dark">
+				25
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				26
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				27
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				28
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				29
+			</div>
+			<div class="col-1 px-5 py-5 border good bg-success">
+				30
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				31
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				32
+			</div>
+		</div>
+		<!--четвертый ряд-->
+		<div class="row">
+			<div class="col-1 px-5 py-5 border good bg-success">
+				33
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				34
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				35
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				36
+			</div>	
+			<div class="col-1 px-5 py-5 border vopros1 bg-primary">
+				37
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-danger">
+				38
+			</div>
+			<div class="col-1 px-5 py-5 border good bg-success">
+				39
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				40
+			</div>
+			<div class="col-1 px-5 py-5 border good bg-success">
+				41
+			</div>
+			<div class="col-1 px-5 py-5 border bad bg-danger">
+				42
+			</div>
+			<div class="col-1 px-5 py-5 border simple bg-warning">
+				43
+			</div>			
+		</div>	
+		<!--финиш-->
+		<div class="row">
+			<div class="col-10"></div>
+			<div class="col-1 py-2 bg-success finish">
+				<h2 class="mr-5">Finish</h2>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		
+		let dice = document.querySelector(".dice")
+		let finish = document.querySelector(".finish")
+		let good = document.querySelectorAll(".good")
+		let simple = document.querySelectorAll(".simple")
+		let bad = document.querySelectorAll(".bad")
+		let black = document.querySelector(".black")
+		let send = document.querySelector(".send")
+		let send1 = document.querySelector(".send1")
+		let send2 = document.querySelector(".send2")
+		let input = document.querySelector(".input")
+		let input1 = document.querySelector(".input1")
+		let input2 = document.querySelector(".input2")
+		let quest = document.querySelector(".quest")
+		let quest1 = document.querySelector(".quest1")
+		let quest2 = document.querySelector(".quest2")
+		let vopros = document.querySelector(".vopros")
+		let vopros1 = document.querySelector(".vopros1")
+		let vopros2 = document.querySelector(".vopros2")
+		let player = document.querySelector(".player_begin")
+		let score = 50;
+		let previous;
+		let previous_index;
+
+		document.querySelector(".score").innerHTML = score;
+		dice.onclick = function(){
+			let random = Math.random()*8
+			let round = Math.round(random)
+			alert(round);
+		}
+
+		for(let index = 0; index<9; index = index + 1){
+			good[index].onclick = function(){
+				good[index].style.backgroundImage = "url(game_player.png)"
+				good[index].style.backgroundSize = "100% 100%"
+				if(previous=="good"){
+					good[previous_index].style.backgroundImage = "none"
+					bad[previous_index].style.backgroundImage = "none"
+					simple[previous_index].style.backgroundImage = "none"
+				}
+				previous = "good";
+				previous_index = index;
+				player.style.backgroundImage = "none"
+				score = score + 100;
+				document.querySelector(".score").innerHTML = score;
+				
+
+				/*let time = function(){
+					good[index].style.backgroundImage = "none"
+				}
+				setTimeout(time,2000)*/
+			}
+		}
+		for(let index1 = 0; index1<19; index1 = index1 + 1){
+			simple[index1].onclick = function(){
+				simple[index1].style.backgroundImage = "url(game_player.png)"
+				simple[index1].style.backgroundSize = "100% 100%"
+				if(previous=="simple"){
+					simple[previous_index].style.backgroundImage = "none"
+					bad[previous_index].style.backgroundImage = "none"
+					good[previous_index].style.backgroundImage = "none"
+				}
+				previous = "simple";
+				previous_index = index1;
+				player.style.backgroundImage = "none"
+				score = score + 50;
+				document.querySelector(".score").innerHTML = score;
+				
+
+				/*let time1 = function(){
+					simple[index1].style.backgroundImage = "none"
+				}
+				setTimeout(time1,2000)*/
+			}
+		}
+		for(let index2 = 0; index2<11; index2 = index2 + 1){
+			bad[index2].onclick = function(){
+				bad[index2].style.backgroundImage = "url(game_player.png)"
+				bad[index2].style.backgroundSize = "100% 100%"
+				if(previous=="bad"){
+					bad[previous_index].style.backgroundImage = "none"
+					simple[previous_index].style.backgroundImage = "none"
+					good[previous_index].style.backgroundImage = "none"
+				}
+				previous = "bad";
+				previous_index = index2;
+				player.style.backgroundImage = "none"
+				score = score - 100
+				//previous = "bad";
+				
+
+				/*
+				document.querySelector(".score").innerHTML = score;
+				let time2 = function(){
+					bad[index2].style.backgroundImage = "none"
+				}
+				setTimeout(time2,2000)*/
+			}
+		}
+		black.onclick = function(){
+			score = score = 50
+			document.querySelector(".score").innerHTML = score;
+		}
+		vopros.onclick = function(){
+			quest.style.display = "block";
+		}
+		vopros1.onclick = function(){
+			quest1.style.display = "block";
+		}
+		vopros2.onclick = function(){
+			quest2.style.display = "block";
+		}
+		send.onclick = function(){
+			if (input.value==2){
+				score = score + 50
+				document.querySelector(".score").innerHTML = score;
+				quest.style.display = "none"
+			}
+			else {
+				score = score - 50
+				document.querySelector(".score").innerHTML = score;
+				quest.style.display = "none"
+			}
+		}
+		send1.onclick = function(){
+			if (input1.value==11){
+				score = score + 50
+				document.querySelector(".score").innerHTML = score;
+				quest1.style.display = "none"
+			}
+			else {
+				score = score - 50
+				document.querySelector(".score").innerHTML = score;
+				quest1.style.display = "none"
+			}
+		}
+		send2.onclick = function(){
+			if (input2.value==12){
+				score = score + 50
+				document.querySelector(".score").innerHTML = score;
+				quest2.style.display = "none"
+			}
+			else {
+				score = score - 50
+				document.querySelector(".score").innerHTML = score;
+				quest2.style.display = "none"
+			}
+		}
+		finish.onclick = function(){
+			if(score >= 250){
+				alert("Ты выиграл")
+			}
+			else{
+				alert("Ты проиграл")
+			}
+		}
+	</script>
+	</body>
+	</html>
+	
